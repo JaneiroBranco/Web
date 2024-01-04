@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <style>
+    body {
+      background: url('https://i.imgur.com/VvdQ3Ql.jpg') center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 15px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 25px;
+      margin: 10px;
+      width: 200px;
+    }
+    .btn-green {
+      background-color: #4CAF50; /* Verde */
+      color: white;
+    }
+    .btn-red {
+      background-color: #FF0000; /* Vermelho */
+      color: white;
+    }
+    .block {
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    }
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JANEIRO BRANCO</h1>
+  <div class="block">
+    <h2>PODCASTS</h2>
+    <div class="btn-container">
+      <button class="btn btn-green" onclick="redirecionar('LINK_1')">Podcast 1</button>
+      <button class="btn btn-green" onclick="redirecionar('LINK_2')">Podcast 2</button>
+      <button class="btn btn-green" onclick="redirecionar('LINK_3')">Podcast 3</button>
+      <button class="btn btn-green" onclick="redirecionar('LINK_4')">Podcast 4</button>
+    </div>
+  </div>
+  <div class="block">
+    <h2>VÍDEOS MOTIVACIONAIS</h2>
+    <div class="btn-container">
+      <button class="btn btn-red" onclick="redirecionar('https://www.youtube.com/watch?v=B7XL0ApjXR8')">Vídeo 1</button>
+      <button class="btn btn-red" onclick="redirecionar('https://www.youtube.com/watch?v=mu0UItIzQQQ')">Vídeo 2</button>
+      <button class="btn btn-red" onclick="redirecionar('https://www.youtube.com/watch?v=Qlrwp2OY45o')">Vídeo 3</button>
+      <button class="btn btn-red" onclick="redirecionar('https://www.youtube.com/watch?v=8wJsvHjh0Pg')">Vídeo 4</button>
+    </div>
+  </div>
+
+  <script>
+    function redirecionar(link) {
+      window.location.href = link;
+    }
+  </script>
+</body>
+</html>
+
